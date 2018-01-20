@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.static('./public'))
 
 app.get('/', (req, res) => {
-   res.sendFile('index.html') 
+   res.send('Hello World') 
 })
 
 app.listen(PORT, (req, res) => console.log(`Listening on port ${PORT}`)) 
